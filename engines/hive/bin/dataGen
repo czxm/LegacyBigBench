@@ -89,7 +89,7 @@ runModule () {
   echo "==============================================="
   echo "creating: $PDGF_ARCHIVE_PATH"
   rm -f "$PDGF_ARCHIVE_PATH"
-  runCmdWithErrorCheck tar -C "$BIG_BENCH_HOME" -caf "$PDGF_ARCHIVE_PATH" data-generator/
+  runCmdWithErrorCheck tar -C "$BIG_BENCH_HOME" -cf "$PDGF_ARCHIVE_PATH" data-generator/
   echo "OK"
 
   echo "==============================================="
